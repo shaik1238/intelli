@@ -40,13 +40,13 @@
 
 	
          <repositories>
-          <repository>
+		 
              <snapshotRepository>
                 <id>snapshot</id>
                 <name>Snapshot</name>
                 <url>http://localhost:8081/repository/repo/</url>
             </snapshotRepository>
-          </repository>
+        
         </repositories>
   
 </project>
