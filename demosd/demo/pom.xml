@@ -42,7 +42,7 @@
          <repositories>
           <repository>
              <snapshotRepository>
-                <id>nexus</id>
+                <id>snapshot</id>
                 <name>Snapshot</name>
                 <url>http://localhost:8081/repository/repo/</url>
             </snapshotRepository>
