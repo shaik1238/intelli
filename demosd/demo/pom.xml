@@ -39,11 +39,12 @@
 	</build>
 
 	<distributionManagement>
-    <repository>
-    <snapshotRepository>
-      <id>nexus</id>
-      <name>Snapshot</name>
-      <url>http://localhost:8081/repository/repo/</url>
-    </snapshotRepository>
+          <repository>
+             <snapshotRepository>
+                <id>nexus</id>
+                <name>Snapshot</name>
+                <url>http://localhost:8081/repository/repo/</url>
+            </snapshotRepository>
+          </repository>
   </distributionManagement>
 </project>
