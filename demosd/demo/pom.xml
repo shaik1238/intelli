@@ -19,9 +19,7 @@
 	<profiles>
 		<profile>
 			<id>sonar</id>
-			<activation>
-				<activationByDefault>true</activationByDefault>
-			</activation>
+			
 			<properties>
 				<sonar.host.url>
 					http://3.12.241.46:9000/
