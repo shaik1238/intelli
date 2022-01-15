@@ -16,6 +16,47 @@
 	<properties>
 		<java.version>11</java.version>
 	</properties>
+	<profiles>
+		<profile>
+			<id>sonar</id>
+			<activation>
+				<activationByDefault>true</activationByDefault>
+			</activation>
+			<properties>
+				<sonar.host.url>
+					http://3.145.143.122:9000/
+				</sonar.host.url>
+			</properties>
+		</profile>
+		<profile>
+			<id>coverage</id>
+			<activation>
+				<activationByDefault>true</activationByDefault>
+			</activation>
+			<build>
+				<plugins>
+					<plugin>
+						<groupId>org.jacoco</groupId>
+						<artifactId>jacoco-maven-plugin</artifactId>
+						<executions>
+							<execution>
+								<id>prepare-agent</id>
+								<goals>
+									<goal>prepare-agent</goal>
+								</goals>
+							</execution>
+							<execution>
+								<id>report</id>
+								<goals>
+									<goal>report</goal>
+								</goals>
+							</execution>
+						</executions>
+					</plugin>
+				</plugins>
+			</build>
+		</profile>
+	</profiles>
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
